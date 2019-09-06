@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Numero } from 'src/app/models/numero.model';
 
 @Component({
   selector: 'app-numeros-publicados',
@@ -6,10 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./numeros-publicados.component.scss']
 })
 export class NumerosPublicadosComponent implements OnInit {
-
+  numsPublicados: Numero[];
   constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

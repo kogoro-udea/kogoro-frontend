@@ -18,6 +18,7 @@ import { TiposTextoComponent } from './components/tipos-texto/tipos-texto.compon
 import { FormatoTextosComponent } from './components/formato-textos/formato-textos.component';
 import { EstructuraArticulosComponent } from './components/estructura-articulos/estructura-articulos.component';
 import { FormatoIdentificacionTextosComponent } from './components/formato-identificacion-textos/formato-identificacion-textos.component';
+import { NumeroPublicadoComponent } from './components/numero-publicado/numero-publicado.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { FormatoIdentificacionTextosComponent } from './components/formato-ident
     TiposTextoComponent,
     FormatoTextosComponent,
     EstructuraArticulosComponent,
-    FormatoIdentificacionTextosComponent
+    FormatoIdentificacionTextosComponent,
+    NumeroPublicadoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+p {
+  font-weight: 400;
+}
+
+// #F9B234k amarillo
+// #73372C cafe
+.brown.darken-2 {
+    background-color: #73372C !important;
+  }
+  

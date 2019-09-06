@@ -5,49 +5,54 @@
             <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" height="30" class="d-inline-block align-top"
                 alt="Logo"></a>
     </mdb-navbar-brand>
-
     <links>
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown" dropdown>
-                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"
-                    mdbWavesEffect>
-                    Inicio<span class="caret"></span></a>
-                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Convocatorias</a>
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Número actual</a>
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Noticias/Eventos</a>
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Frases de números publicadas</a>
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Naipes</a>
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Fotos de companeros</a>
-                </div>
-            </li>
+
             <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link waves-light" mdbWavesEffect>Números publicados</a>
+                <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['Inicio']">Inicio</a>
             </li>
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link waves-light" mdbWavesEffect>Proceso de publicación</a>
-            </li>
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['revista']">La revista</a>
-            </li>
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link waves-light" mdbWavesEffect>Contacto</a>
-            </li>
+
             <li class="nav-item dropdown" dropdown routerLinkActive="active">
                 <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"
                     mdbWavesEffect>
-                    Archivo<span class="caret"></span></a>
+                    La revista<span class="caret"></span></a>
                 <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Multimedia</a>
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Naipes</a>
-                    <a class="dropdown-item waves-light" mdbWavesEffect href="#">Proyectos</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['/Revista/QueEsKogoro']">¿Qué es
+                        Kogoró?</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect
+                        [routerLink]="['/Revista/Historia']">Historia</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect
+                        [routerLink]="['/Revista/ComiteEditorial']">Comité
+                        Editorial</a>
                 </div>
             </li>
             <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link waves-light" mdbWavesEffect>Proceso de publicación</a>
+                <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['NumerosPublicados']">Números
+                    publicados</a>
+            </li>
+
+            <li class="nav-item dropdown" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"
+                    mdbWavesEffect>
+                    Proceso de publicación<span class="caret"></span></a>
+
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbWavesEffect
+                        [routerLink]="['/ProcesoDePublicacion/TiposDeTexto']">Acerca
+                        de los tipos de texto</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect
+                        [routerLink]="['/ProcesoDePublicacion/FormatosTextos']">Acerca
+                        de los formatos de los textos</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect
+                        [routerLink]="['/ProcesoDePublicacion/EstructuraArticulos']">Sobre la
+                        estructura de los artículos</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect
+                        [routerLink]="['/ProcesoDePublicacion/FormatoIdentificacionTextos']">Formato
+                        de identificación de textos</a>
+                </div>
             </li>
             <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link waves-light" mdbWavesEffect>Blog</a>
+                <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['Contacto']">Contacto</a>
             </li>
         </ul>
     </links>

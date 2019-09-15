@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Numero } from 'src/app/models/numero.model';
+import { NumerosService } from 'src/app/services/numeros.service';
 
 @Component({
   selector: 'app-numeros-publicados',
@@ -8,6 +9,10 @@ import { Numero } from 'src/app/models/numero.model';
 })
 export class NumerosPublicadosComponent implements OnInit {
   numsPublicados: Numero[];
-  constructor() { }
-  ngOnInit() {}
+  constructor(private numerosService: NumerosService) {
+    this.numsPublicados = this.numerosService.numerosPublicados;
+    console.log(this.numsPublicados);
+
+  }
+  ngOnInit() { }
 }

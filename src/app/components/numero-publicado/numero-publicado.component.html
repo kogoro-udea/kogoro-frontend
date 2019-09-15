@@ -1,17 +1,15 @@
 <mdb-card cascade="true" wider="true">
-    <div class="view view-cascade overlay waves-light" mdbWavesEffect>
-        <mdb-card-img [src]="numero.portada"></mdb-card-img>
-        <a><div class="mask rgba-white-slight"></div></a>
-    </div>
+    <mdb-card-img src="assets/img/logo_kogoro.png"></mdb-card-img>
     <mdb-card-body cascade="true" class="text-center">
         <h4 class="card-title">
             {{numero.titulo}}
         </h4>
         <mdb-card-text>
-            PDF
+            Descargar PDF
         </mdb-card-text>
-        <a class="px-2 icons red-text">
-            <mdb-icon fas icon="file-download" size="2x"></mdb-icon>
+        <a class="icons red-text" [href]="numero.url" download>
+            <mdb-icon fas icon="file-download" size="2x">
+            </mdb-icon>
         </a>
     </mdb-card-body>
 </mdb-card>
